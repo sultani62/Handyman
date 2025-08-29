@@ -1,0 +1,218 @@
+:root {
+  --primary: #1f4f8a;
+  --secondary: #6c757d;
+  --accent: #17a2b8;
+  --white: #ffffff;
+  --gray-light: #f8f9fa;
+  --transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #212529;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+/* Brand Colors */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.text-primary {
+  color: var(--primary) !important;
+}
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: #18406e;
+  border-color: #18406e;
+}
+.btn-accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+.btn-accent:hover {
+  background-color: #148ea1;
+  border-color: #148ea1;
+}
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/7a8b01d5-ebed-4ff7-a58a-c8100314548d.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+/* Animation System */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition);
+}
+.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay-0 {
+  transition-delay: 0ms;
+}
+.delay-100 {
+  transition-delay: 100ms;
+}
+.delay-200 {
+  transition-delay: 200ms;
+}
+.delay-300 {
+  transition-delay: 300ms;
+}
+.delay-400 {
+  transition-delay: 400ms;
+}
+.delay-500 {
+  transition-delay: 500ms;
+}
+.delay-600 {
+  transition-delay: 600ms;
+}
+/* Enhanced Card Animations */
+.service-card,
+.pricing-card,
+.team-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+  opacity: 0.8;
+}
+.service-card:hover,
+.pricing-card:hover,
+.team-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.fab a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: white;
+  font-size: 1.6rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.fab a:hover {
+  transform: scale(1.1);
+}
+/* Section Spacing */
+.section {
+  padding: 100px 0;
+}
+.section--light {
+  background-color: var(--white);
+}
+.section--gray {
+  background-color: var(--gray-light);
+}
+/* CTA Banner */
+.cta-banner {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+/* Object Fit for Images */
+.img-cover {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+/* Form Validation */
+.form-control:invalid + .invalid-feedback {
+  display: block;
+}
+/* Accessibility */
+a:focus,
+button:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* Gradient Button */
+.btn-gradient {
+  background: linear-gradient(90deg, var(--primary), #2a6dbf);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(31, 79, 138, 0.3);
+}
+/* Team Section */
+.team-img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* Blog Section */
+.blog-card {
+  transition: transform 0.3s ease;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+/* Testimonial Form */
+.testimonial-form {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+/* Tracking Section */
+.tracking-card {
+  border-radius: 10px;
+  overflow: hidden;
+}

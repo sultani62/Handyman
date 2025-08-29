@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Handy Man – Trusted local home repair & installation experts. Fast, licensed, insured. Book same-day service today."
+    />
+    <meta
+      name="keywords"
+      content="handyman, home repair, furniture assembly, drywall repair, fan installation, tile repair, local handyman"
+    />
+    <meta
+      property="og:title"
+      content="Handy Man – Your Trusted Home Repair Expert"
+    />
+    <meta
+      property="og:description"
+      content="Small fixes to full installs—done right the first time. Book now!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://via.placeholder.com/1200x630" />
+    <meta property="og:url" content="https://yourhandyman.com" />
+    <title>Handy Man – Trusted Home Repair & Installation Experts</title>
+
+    <!-- Preload Hero Image -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Handy Man",
+        "image": "https://via.placeholder.com/300x200",
+        "url": "https://yourhandyman.com",
+        "telephone": "+15551234567",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Fixit Lane",
+          "addressLocality": "Springfield",
+          "addressRegion": "CA",
+          "postalCode": "90210"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ],
+        "serviceArea": {
+          "@type": "Place",
+          "name": "Greater Springfield Area"
+        },
+        "description": "Professional handyman services including repairs, installations, and maintenance.",
+        "priceRange": "$$",
+        "servesCurrencies": ["USD"],
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "servicePhone": {
+            "@type": "ContactPoint",
+            "telephone": "+15551234567"
+          }
+        },
+        "service": [
+          {
+            "@type": "Service",
+            "name": "Furniture Assembly",
+            "description": "We build IKEA, modular, or flat-pack furniture with care and precision."
+          },
+          {
+            "@type": "Service",
+            "name": "Drywall Installation",
+            "description": "New walls or patching holes—we ensure a seamless finish."
+          },
+          {
+            "@type": "Service",
+            "name": "Fan Installation",
+            "description": "Ceiling, exhaust, or smart fans—we install them safely."
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "127"
+        }
+      }
+    </script>
+
+    <!-- Sticky Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand logo" href="#home"
+          ><img src="img/Logo.png" width="80px" height="50px" alt="" /> Handy
+          Man</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNav"
+          aria-controls="offcanvasNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tracking">Track</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Menu -->
+    <div
+      class="offcanvas offcanvas-end text-white bg-primary"
+      tabindex="-1"
+      id="offcanvasNav"
+      aria-labelledby="offcanvasNavLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title logo" id="offcanvasNavLabel">Handy Man</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#home"
+              data-bs-dismiss="offcanvas"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#services"
+              data-bs-dismiss="offcanvas"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#about"
+              data-bs-dismiss="offcanvas"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#team"
+              data-bs-dismiss="offcanvas"
+              >Team</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#pricing"
+              data-bs-dismiss="offcanvas"
+              >Pricing</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#faq"
+              data-bs-dismiss="offcanvas"
+              >FAQ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#reviews"
+              data-bs-dismiss="offcanvas"
+              >Reviews</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#blog"
+              data-bs-dismiss="offcanvas"
+              >Blog</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#tracking"
+              data-bs-dismiss="offcanvas"
+              >Track Request</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="#contact"
+              data-bs-dismiss="offcanvas"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center text-white">
+      <div class="container text-center">
+        <h1 class="display-3 fw-bold reveal delay-0 animate-in">
+          Handy Man – Your Trusted Home Repair & Installation Expert
+        </h1>
+        <p class="lead mt-3 fs-4 reveal delay-100 animate-in">
+          Small fixes to full installs—done right the first time.
+        </p>
+        <div class="mt-5 reveal delay-200 animate-in">
+          <a href="#contact" class="btn btn-accent btn-lg px-4 me-3"
+            >Book Now</a
+          >
+          <a href="#contact" class="btn btn-outline-light btn-lg px-4"
+            >Get a Fast Quote</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section (12 Services) -->
+    <section id="services" class="section section--gray">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="h1 reveal delay-0 animate-in">Our Services</h2>
+          <p class="lead reveal delay-100 animate-in">
+            From repairs to installations—we do it all.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- Service 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-0">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-1.png"
+                  class="img-cover"
+                  alt="Furniture Assembly"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Assemble Furniture</h3>
+                <p class="card-text">
+                  We build IKEA, modular, or flat-pack furniture with care and
+                  precision.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-2"
+                  class="img-cover"
+                  alt="Clean Gutters"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Clean Gutters</h3>
+                <p class="card-text">
+                  Remove debris and prevent water damage with professional
+                  cleaning.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-200">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-3"
+                  class="img-cover"
+                  alt="Drywall Installation"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Install Drywall</h3>
+                <p class="card-text">
+                  New walls or patching holes—we ensure a seamless finish.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-300">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-4.jpg"
+                  class="img-cover"
+                  alt="Fan Installation"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Install Fan</h3>
+                <p class="card-text">
+                  Ceiling, exhaust, or smart fans—we install them safely.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-400">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-5.jpg"
+                  class="img-cover"
+                  alt="Tile Installation"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Install Tile</h3>
+                <p class="card-text">
+                  Floors, backsplashes, bathrooms—we tile with precision.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-500">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-6.jpg"
+                  class="img-cover"
+                  alt="Water Fixture Installation"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Install Water Fixtures</h3>
+                <p class="card-text">
+                  Sinks, faucets, showers—we handle all plumbing installs.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-0">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-7.jpg"
+                  class="img-cover"
+                  alt="TV Mounting"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Mount TV</h3>
+                <p class="card-text">
+                  Wall-mount your TV safely and cleanly—no visible wires.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 8 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-8.jpg"
+                  class="img-cover"
+                  alt="Drywall Repair"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Repair Drywall</h3>
+                <p class="card-text">
+                  Fix holes, dents, or water damage with seamless patching.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 9 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-200">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-9.jpg"
+                  class="img-cover"
+                  alt="Fan Repair"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Repair Fan</h3>
+                <p class="card-text">
+                  Wobbly or noisy fan? We'll diagnose and fix it fast.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 10 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-300">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-10.jpg"
+                  class="img-cover"
+                  alt="Flooring Repair"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Repair Flooring</h3>
+                <p class="card-text">
+                  Fix scratched, warped, or loose hardwood, tile, or laminate.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 11 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-400">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-11.jpg"
+                  class="img-cover"
+                  alt="Tile Replacement"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Replace Tile</h3>
+                <p class="card-text">
+                  Cracked or outdated tile? We'll replace it with care.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Service 12 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 reveal delay-500">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="img/Service-12.png"
+                  class="img-cover"
+                  alt="General Repairs"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="h5 card-title">Other Repairs</h3>
+                <p class="card-text">
+                  Shelves, doors, locks, or odd jobs—we handle it all.
+                </p>
+                <a href="#contact" class="btn btn-sm btn-outline-primary"
+                  >Schedule</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="section section--light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
+            <h2 class="h1 reveal delay-0 animate-in">Why Choose Us?</h2>
+            <ul class="list-unstyled mt-4">
+              <li class="mb-3 reveal delay-100">
+                <i class="bi bi-shield-check text-primary me-2"></i>
+                <strong>Licensed & Insured</strong>: Fully covered for your
+                peace of mind.
+              </li>
+              <li class="mb-3 reveal delay-200">
+                <i class="bi bi-cash-stack text-primary me-2"></i>
+                <strong>Upfront Pricing</strong>: No surprise fees—just honest
+                quotes.
+              </li>
+              <li class="mb-3 reveal delay-300">
+                <i class="bi bi-alarm text-primary me-2"></i>
+                <strong>Same-Day Slots</strong>: Need help fast? We'll be there.
+              </li>
+              <li class="mb-3 reveal delay-400">
+                <i class="bi bi-award text-primary me-2"></i>
+                <strong>Guaranteed Work</strong>: 100% satisfaction or we fix it
+                free.
+              </li>
+              <li class="mb-3 reveal delay-500">
+                <i class="bi bi-person-check text-primary me-2"></i>
+                <strong>Background-Checked Pros</strong>: Safe, reliable, and
+                respectful.
+              </li>
+            </ul>
+            <div class="mt-4 reveal delay-600">
+              <a href="#contact" class="btn btn-gradient">Get a Quote</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img
+              src="img/chose.jpg"
+              class="img-fluid rounded shadow"
+              alt="Handyman at work"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section--gray">
+      <div class="container">
+        <h2 class="text-center h1 mb-5 reveal delay-0 animate-in">
+          How It Works
+        </h2>
+        <div class="row text-center g-5">
+          <div class="col-md-4 reveal delay-100">
+            <div class="p-3 rounded bg-white shadow-sm mb-3 d-inline-block">
+              <div class="display-4 text-primary">1</div>
+            </div>
+            <h3 class="h5">Request</h3>
+            <p>Call, text, or fill out our quick form with your needs.</p>
+          </div>
+          <div class="col-md-4 reveal delay-300">
+            <div class="p-3 rounded bg-white shadow-sm mb-3 d-inline-block">
+              <div class="display-4 text-primary">2</div>
+            </div>
+            <h3 class="h5">Schedule</h3>
+            <p>Pick a time—often same or next day.</p>
+          </div>
+          <div class="col-md-4 reveal delay-500">
+            <div class="p-3 rounded bg-white shadow-sm mb-3 d-inline-block">
+              <div class="display-4 text-primary">3</div>
+            </div>
+            <h3 class="h5">Done</h3>
+            <p>We arrive on time, fix it right, and clean up after.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section section--light">
+      <div class="container">
+        <h2 class="text-center h1 mb-3 reveal delay-0 animate-in">
+          My Profile
+        </h2>
+        <h4
+          class="text-center h1 mb-2 reveal delay-0 animate-in fs-3 text-secondary"
+        >
+          Skilled experts committed to your comfort
+        </h4>
+        <div class="row g-5 justify-content-center">
+          <div class="col-md-6 col-lg-3 reveal delay-300">
+            <div class="card team-card text-center h-100">
+              <img
+                src="https://randomuser.me/api/portraits/men/67.jpg"
+                class="img-fluid team-img"
+                alt="James - Repair Specialist"
+              />
+              <div class="card-body">
+                <h3 class="h6">Haji.</h3>
+                <p class="text-muted small">25+ Years Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Banner -->
+    <section class="section px-0">
+      <div class="container">
+        <div class="px-4 reveal delay-0">
+          <div class="cta-banner">
+            <h3 class="h2 mb-3">Need Help Today?</h3>
+            <p class="lead mb-4">
+              We offer same-day service for most repairs and installations.
+            </p>
+            <a href="tel:+15551234567" class="btn btn-lg btn-warning"
+              >Call Now: (555) 123-4567</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section section--light">
+      <div class="container">
+        <h2 class="text-center h1 mb-5 reveal delay-0 animate-in">
+          What Our Customers Say
+        </h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active reveal delay-100">
+              <blockquote class="text-center p-4">
+                <p class="fs-5">
+                  "Fixed my leaky faucet and mounted my TV in under two hours.
+                  Professional and affordable!"
+                </p>
+                <footer class="text-white mt-3">— Sarah M., Springfield</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item reveal delay-200">
+              <blockquote class="text-center p-4">
+                <p class="fs-5">
+                  "Assembled IKEA furniture perfectly. Saved me hours of
+                  frustration. Will use again!"
+                </p>
+                <footer class="text-white mt-3">— James L., Riverside</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item reveal delay-300">
+              <blockquote class="text-center p-4">
+                <p class="fs-5">
+                  "Repaired drywall after a pipe burst. Looks brand new. Highly
+                  recommend."
+                </p>
+                <footer class="text-white mt-3">— Linda T., Claremont</footer>
+              </blockquote>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Submission Form -->
+    <section class="section section--gray">
+      <div class="container">
+        <h2 class="text-center h1 mb-5 reveal delay-0 animate-in">
+          Share Your Experience
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form
+              id="testimonialForm"
+              class="testimonial-form needs-validation"
+              novalidate
+            >
+              <div class="mb-3">
+                <label for="reviewerName" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="reviewerName"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="reviewerLocation" class="form-label">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="reviewerLocation"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your city.</div>
+              </div>
+              <div class="mb-3">
+                <label for="rating" class="form-label">Rating</label>
+                <select class="form-select" id="rating" required>
+                  <option value="">Choose...</option>
+                  <option value="5">5 Stars - Excellent</option>
+                  <option value="4">4 Stars - Very Good</option>
+                  <option value="3">3 Stars - Good</option>
+                  <option value="2">2 Stars - Fair</option>
+                  <option value="1">1 Star - Poor</option>
+                </select>
+                <div class="invalid-feedback">Please select a rating.</div>
+              </div>
+              <div class="mb-3">
+                <label for="testimonial" class="form-label">Your Review</label>
+                <textarea
+                  class="form-control"
+                  id="testimonial"
+                  rows="4"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  Please share your experience.
+                </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="permissionCheck"
+                  required
+                />
+                <label class="form-check-label" for="permissionCheck">
+                  I give permission to share my review on your website and
+                  marketing materials.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree to share your review.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Submit Review
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--light">
+      <div class="container">
+        <h2 class="text-center h1 mb-5 reveal delay-0 animate-in">
+          Frequently Asked Questions
+        </h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item reveal delay-100">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+              >
+                How quickly can you come?
+              </button>
+            </h3>
+            <div
+              id="faq1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Most jobs are scheduled within 24–48 hours. Same-day service is
+                often available.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal delay-200">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+              >
+                Are you licensed and insured?
+              </button>
+            </h3>
+            <div
+              id="faq2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we are fully licensed, bonded, and insured for your
+                protection.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal delay-300">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+              >
+                Do you offer warranties?
+              </button>
+            </h3>
+            <div
+              id="faq3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, all our work is guaranteed for 30 days. If anything fails,
+                we'll fix it at no cost.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal delay-400">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4"
+              >
+                What areas do you serve?
+              </button>
+            </h3>
+            <div
+              id="faq4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We serve Springfield and surrounding areas within 25 miles.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal delay-500">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq5"
+              >
+                Do you charge for estimates?
+              </button>
+            </h3>
+            <div
+              id="faq5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                No, all quotes are free and no-obligation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section section--gray">
+      <div class="container">
+        <h2 class="text-center h1 mb-5 reveal delay-0 animate-in">
+          Home Improvement Tips
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4 reveal delay-100">
+            <div class="card blog-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                class="card-img-top"
+                alt="Home maintenance tips"
+              />
+              <div class="card-body">
+                <h3 class="h5 card-title">
+                  5 Essential Home Maintenance Tasks
+                </h3>
+                <p class="card-text">
+                  Keep your home in top shape with these essential maintenance
+                  tasks every homeowner should know.
+                </p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+              <div class="card-footer text-muted">
+                <small>Posted on May 15, 2023</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal delay-200">
+            <div class="card blog-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                class="card-img-top"
+                alt="DIY vs professional"
+              />
+              <div class="card-body">
+                <h3 class="h5 card-title">DIY vs. Hiring a Professional</h3>
+                <p class="card-text">
+                  When should you tackle a project yourself and when is it
+                  better to call in the experts?
+                </p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+              <div class="card-footer text-muted">
+                <small>Posted on April 28, 2023</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal delay-300">
+            <div class="card blog-card h-100">
+              <img
+                src="img/seasons.webp"
+                class="card-img-top"
+                alt="Seasonal home prep"
+              />
+              <div class="card-body">
+                <h3 class="h5 card-title">
+                  Preparing Your Home for all Seasons
+                </h3>
+                <p class="card-text">
+                  Get your home ready for the warmer and cold months with these
+                  seasonal maintenance tips.
+                </p>
+                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+              <div class="card-footer text-muted">
+                <small>Posted on April 10, 2023</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-primary">Call Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section section--gray">
+      <div class="container">
+        <h2 class="text-center h1 mb-5 reveal delay-0 animate-in">
+          Contact Us
+        </h2>
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" required />
+                <div class="invalid-feedback">
+                  Please enter your phone number.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="mb-3">
+                <label for="service" class="form-label">Service Needed</label>
+                <select class="form-select" id="service" required>
+                  <option value="">Choose...</option>
+                  <option>Furniture Assembly</option>
+                  <option>Clean Gutters</option>
+                  <option>Install Drywall</option>
+                  <option>Install Fan</option>
+                  <option>Other</option>
+                </select>
+                <div class="invalid-feedback">Please select a service.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Submit Request
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h4">Contact Info</h3>
+            <p>
+              <strong>📞 Phone:</strong>
+              <a
+                href="tel:+15551234567"
+                class="text-decoration-none text-primary"
+                >+1 (555) 123-4567</a
+              >
+            </p>
+            <p><strong>⏰ Hours:</strong> Mon–Fri 8am–6pm</p>
+            <p><strong>📍 Service Area:</strong> Springfield & nearby towns</p>
+            <div class="ratio ratio-16x9 mt-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.123456789!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzA4LjAiTiAxMTjCsDE0JzM3LjMiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="logo mb-4">Handy Man</h5>
+            <p>
+              Trusted local handyman services for home repairs, installations,
+              and maintenance.
+            </p>
+          </div>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h6>Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#services" class="text-white text-decoration-none"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="text-white text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="text-white text-decoration-none"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h6>Hours</h6>
+            <p>Mon–Fri: 8am–6pm<br />Sat–Sun: Closed</p>
+          </div>
+          <div class="col-md-3">
+            <h6>Follow Us</h6>
+            <div class="d-flex gap-3 fs-5">
+              <a
+                href="https://facebook.com/handyman"
+                target="_blank"
+                rel="noopener"
+                class="text-white"
+                aria-label="Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="https://instagram.com/handyman"
+                target="_blank"
+                rel="noopener"
+                class="text-white"
+                aria-label="Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://youtube.com/handyman"
+                target="_blank"
+                rel="noopener"
+                class="text-white"
+                aria-label="YouTube"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a
+                href="https://twitter.com/handyman"
+                target="_blank"
+                rel="noopener"
+                class="text-white"
+                aria-label="Twitter"
+              >
+                <i class="bi bi-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="text-center text-muted mb-0">
+          © 2025 Handy Man. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <div class="fab">
+      <a href="tel:+15551234567" aria-label="Call Handy Man">
+        <i class="bi bi-telephone-fill"></i>
+      </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script>
+      // Animation Observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-in");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".reveal").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Contact Form Submission
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+          if (!contactForm.checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+          } else {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const email = document.getElementById("email").value;
+            const service = document.getElementById("service").value;
+
+            // Here you would normally send the data to a server
+            // For demo purposes, we'll just show a success message
+            const formAlert = document.createElement("div");
+            formAlert.className = "alert alert-success mt-3";
+            formAlert.textContent = `Thank you, ${name}! Your request for ${service} has been received. We'll contact you soon at ${phone}.`;
+
+            // Replace the form with the success message
+            this.parentNode.replaceChild(formAlert, this);
+          }
+
+          contactForm.classList.add("was-validated");
+        });
+      }
+
+      // Testimonial Form
+      const testimonialForm = document.getElementById("testimonialForm");
+      if (testimonialForm) {
+        testimonialForm.addEventListener("submit", function (e) {
+          if (!testimonialForm.checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+          } else {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById("reviewerName").value;
+
+            // Here you would normally send the data to a server
+            // For demo purposes, we'll just show a success message
+            const formAlert = document.createElement("div");
+            formAlert.className = "alert alert-success mt-3";
+            formAlert.textContent = `Thank you, ${name}! Your review has been submitted and is pending approval.`;
+
+            // Replace the form with the success message
+            this.parentNode.replaceChild(formAlert, this);
+          }
+
+          testimonialForm.classList.add("was-validated");
+        });
+      }
+
+      // Tracking Form
+      const trackingForm = document.getElementById("trackingForm");
+      const trackingResult = document.getElementById("trackingResult");
+
+      if (trackingForm) {
+        trackingForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form values
+          const email = document.getElementById("trackingEmail").value;
+          const trackingId = document.getElementById("trackingId").value;
+
+          // Here you would normally check the status with a server
+          // For demo purposes, we'll just show a mock result
+          document.getElementById("requestStatus").textContent = "In Progress";
+          document.getElementById("requestDetails").textContent =
+            "Your furniture assembly service is scheduled for tomorrow between 10am-12pm. We'll send a reminder email to " +
+            email +
+            ".";
+          document.getElementById("progressBar").style.width = "50%";
+          document
+            .getElementById("progressBar")
+            .setAttribute("aria-valuenow", "50");
+
+          // Show the result
+          trackingResult.classList.remove("d-none");
+        });
+      }
+    </script>
+  </body>
+</html>
