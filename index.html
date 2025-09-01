@@ -1125,9 +1125,7 @@
       <div class="container hidden-animate">
         <div class="row justify-content-center">
           <div class="col-12 text-center hidden-animate fade-delay-1">
-            <h2 class="text-center h1 mb- reveal delay-0 animate-in">
-              Contact Us
-            </h2>
+            <h2 class="section-title text-center">Contact <span>Us</span></h2>
             <p class="section-subtitle">Get in touch with our team today</p>
           </div>
         </div>
@@ -1468,7 +1466,7 @@
     <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Intersection Observer for Animations -->
+    <!-- Intersection Observer -->
     <script>
       const observer1 = new IntersectionObserver(
         (entries) => {
@@ -1482,21 +1480,22 @@
         { threshold: 0.1 }
       );
 
-      document.querySelectorAll(".hidden-animate").forEach((el) => {
-        observer1.observe(el);
-      });
+      document
+        .querySelectorAll(".hidden-animate")
+        .forEach((el) => observer1.observe(el));
     </script>
 
-    <!-- EmailJS Integration Script -->
+    <!-- EmailJS Integration -->
     <script>
+      // ✅ Use your REAL Public Key from EmailJS dashboard
       (function () {
-        const publicKey = "kpNbXI1pdfCyklyi7";
-        if (typeof emailjs !== "undefined") {
-          emailjs.init(publicKey);
-          console.log("✅ EmailJS initialized with key:", publicKey);
-        } else {
+        const publicKey = "public_your_real_key_here"; // ← CHANGE THIS!
+        if (typeof emailjs === "undefined") {
           console.error("❌ EmailJS SDK failed to load");
+          return;
         }
+        emailjs.init(publicKey);
+        console.log("✅ EmailJS initialized with key:", publicKey);
       })();
 
       document.addEventListener("DOMContentLoaded", () => {
@@ -1504,12 +1503,8 @@
         const submitTextSpan = document.getElementById("submit-text");
 
         if (!form) {
-          console.error("❌ #contactForm not found. Check ID in HTML.");
+          console.error("❌ #contactForm not found");
           return;
-        }
-
-        if (!submitTextSpan) {
-          console.error("❌ #submit-text not found. Button text won't update.");
         }
 
         form.addEventListener("submit", function (event) {
@@ -1523,13 +1518,9 @@
 
           const submitBtn = form.querySelector("button[type='submit']");
           submitBtn.disabled = true;
+          if (submitTextSpan) submitTextSpan.textContent = "Sending...";
 
-          if (submitTextSpan) {
-            submitTextSpan.textContent = "Sending...";
-          }
-
-          // Debug: Log form data
-          console.log("📤 Sending form:", {
+          console.log("📤 Sending form data:", {
             name: form.name.value,
             phone: form.phone.value,
             email: form.email.value,
@@ -1537,24 +1528,21 @@
             message: form.message.value,
           });
 
+          // ✅ Make sure service ID and template ID are correct
           emailjs
             .sendForm("service_4smj06m", "template_jun0i16", form)
-            .then(
-              () => {
-                alert("✅ Message sent successfully!");
-                form.reset();
-                form.classList.remove("was-validated");
-              },
-              (error) => {
-                console.error("📧 EmailJS Error:", error);
-                alert(`❌ Send failed: ${error.text || JSON.stringify(error)}`);
-              }
-            )
+            .then(() => {
+              alert("✅ Message sent!");
+              form.reset();
+              form.classList.remove("was-validated");
+            })
+            .catch((error) => {
+              console.error("📧 Error:", error);
+              alert(`❌ Failed: ${error.text || JSON.stringify(error)}`);
+            })
             .finally(() => {
               submitBtn.disabled = false;
-              if (submitTextSpan) {
-                submitTextSpan.textContent = "Submit Request";
-              }
+              if (submitTextSpan) submitTextSpan.textContent = "Submit Request";
             });
         });
       });
