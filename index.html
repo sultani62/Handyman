@@ -1120,84 +1120,137 @@
       </div>
     </section>
     <!-- Contact -->
-    <section id="contact" class="section section--gray">
-      <div class="container">
-        <h2 class="text-center h1 mb-5 reveal delay-0 animate-in">
-          Contact Us
-        </h2>
-        <div class="row g-5">
-          <div class="col-lg-6">
-            <form id="contactForm" class="needs-validation" novalidate>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required />
-                <div class="invalid-feedback">Please enter your name.</div>
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="phone" required />
-                <div class="invalid-feedback">
-                  Please enter your phone number.
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required />
-                <div class="invalid-feedback">Please enter a valid email.</div>
-              </div>
-              <div class="mb-3">
-                <label for="service" class="form-label">Service Needed</label>
-                <select class="form-select" id="service" required>
-                  <option value="">Choose...</option>
-                  <option>Furniture Assembly</option>
-                  <option>Clean Gutters</option>
-                  <option>Install Drywall</option>
-                  <option>Install Fan</option>
-                  <option>Other</option>
-                </select>
-                <div class="invalid-feedback">Please select a service.</div>
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="4"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Submit Request
-              </button>
-            </form>
+
+    <section id="contact" class="section py-5">
+      <div class="container hidden-animate">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center hidden-animate fade-delay-1">
+            <h2 class="text-center h1 mb- reveal delay-0 animate-in">
+              Contact Us
+            </h2>
+            <p class="section-subtitle">Get in touch with our team today</p>
           </div>
-          <div class="col-lg-6">
-            <h3 class="h4">Contact Info</h3>
-            <p>
-              <strong>📞 Phone:</strong>
-              <a
-                href="tel:+15551234567"
-                class="text-decoration-none text-primary"
-                >+1 (555) 123-4567</a
-              >
-            </p>
-            <p><strong>⏰ Hours:</strong> Mon–Fri 8am–6pm</p>
-            <p>
-              <strong>📍 Service Area:</strong> Sacramento, California & nearby
-              towns
-            </p>
-            <div class="ratio ratio-16x9 mt-4">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.2461951099976!2d-121.4119202!3d38.5972033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ada3080375cad%3A0x2d9a530ce73d4a9!2s2296%20Eden%20Roc%20Ln%2C%20Sacramento%2C%20CA%2095825%2C%20USA!5e0!3m2!1sen!2sus!4v1756520923620!5m2!1sen!2sus"
-                width="100%"
-                height="450"
-                style="border: 0; border-radius: 12px"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              >
-              </iframe>
+        </div>
+
+        <div class="row g-5 mt-4 justify-content-center">
+          <!-- Contact Form -->
+          <div class="col-lg-6 hidden-animate fade-delay-2">
+            <div class="contact-form shadow-sm rounded">
+              <div class="contact-form-body p-4 bg-white rounded-bottom">
+                <form id="contactForm" class="needs-validation" novalidate>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your phone number.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valid email.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="service" class="form-label"
+                      >Service Needed</label
+                    >
+                    <select
+                      class="form-select"
+                      id="service"
+                      name="service"
+                      required
+                    >
+                      <option value="" selected disabled>Choose...</option>
+                      <option value="Furniture Assembly">
+                        Furniture Assembly
+                      </option>
+                      <option value="Clean Gutters">Clean Gutters</option>
+                      <option value="Install Drywall">Install Drywall</option>
+                      <option value="Install Fan">Install Fan</option>
+                      <option value="Other">Other</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a service.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Tell us more..."
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100 py-3">
+                    <span id="submit-text">Submit Request</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info & Map -->
+          <div class="col-lg-6 hidden-animate fade-delay-3">
+            <div class="p-4">
+              <h3 class="h4 mb-4">
+                <i class="fas fa-info-circle me-2"></i>Contact Info
+              </h3>
+              <p>
+                <strong>📞 Phone:</strong>
+                <a
+                  href="tel:+15551234567"
+                  class="text-decoration-none text-primary"
+                  >+1 (555) 123-4567</a
+                >
+              </p>
+              <p><strong>⏰ Hours:</strong> Mon–Fri 8am–6pm</p>
+              <p>
+                <strong>📍 Service Area:</strong> Springfield & nearby towns
+              </p>
+              <div class="ratio ratio-16x9 mt-4 rounded shadow-sm">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.123456789!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzA4LjAiTiAxMTjCsDE0JzM3LjMiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  style="border: 0; pointer-events: none"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
       <div class="container">
@@ -1407,6 +1460,104 @@
           trackingResult.classList.remove("d-none");
         });
       }
+    </script>
+    <!-- New js codes -->
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Intersection Observer for Animations -->
+    <script>
+      const observer1 = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("fade-in-up");
+              observer1.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".hidden-animate").forEach((el) => {
+        observer1.observe(el);
+      });
+    </script>
+
+    <!-- EmailJS Integration Script -->
+    <script>
+      (function () {
+        const publicKey = "kpNbXI1pdfCyklyi7";
+        if (typeof emailjs !== "undefined") {
+          emailjs.init(publicKey);
+          console.log("✅ EmailJS initialized with key:", publicKey);
+        } else {
+          console.error("❌ EmailJS SDK failed to load");
+        }
+      })();
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contactForm");
+        const submitTextSpan = document.getElementById("submit-text");
+
+        if (!form) {
+          console.error("❌ #contactForm not found. Check ID in HTML.");
+          return;
+        }
+
+        if (!submitTextSpan) {
+          console.error("❌ #submit-text not found. Button text won't update.");
+        }
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          if (!form.checkValidity()) {
+            event.stopPropagation();
+            form.classList.add("was-validated");
+            return;
+          }
+
+          const submitBtn = form.querySelector("button[type='submit']");
+          submitBtn.disabled = true;
+
+          if (submitTextSpan) {
+            submitTextSpan.textContent = "Sending...";
+          }
+
+          // Debug: Log form data
+          console.log("📤 Sending form:", {
+            name: form.name.value,
+            phone: form.phone.value,
+            email: form.email.value,
+            service: form.service.value,
+            message: form.message.value,
+          });
+
+          emailjs
+            .sendForm("service_4smj06m", "template_jun0i16", form)
+            .then(
+              () => {
+                alert("✅ Message sent successfully!");
+                form.reset();
+                form.classList.remove("was-validated");
+              },
+              (error) => {
+                console.error("📧 EmailJS Error:", error);
+                alert(`❌ Send failed: ${error.text || JSON.stringify(error)}`);
+              }
+            )
+            .finally(() => {
+              submitBtn.disabled = false;
+              if (submitTextSpan) {
+                submitTextSpan.textContent = "Submit Request";
+              }
+            });
+        });
+      });
     </script>
   </body>
 </html>
