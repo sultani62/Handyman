@@ -220,3 +220,296 @@ html {
 .carousel-item {
   transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out !important;
 }
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+.section-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 2px;
+}
+.section-subtitle {
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.gallery-img-container {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.gallery-img-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.gallery-img-container:hover .gallery-img {
+  transform: scale(1.05);
+}
+.gallery-img-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  border-radius: 8px;
+}
+.gallery-img-container:hover:before {
+  opacity: 1;
+}
+.img-label {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-weight: 600;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery-img-container:hover .img-label {
+  opacity: 1;
+}
+.img-sm {
+  height: 220px;
+}
+.img-lg {
+  height: 460px;
+}
+.btn-gradient {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.btn-gradient.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(37, 117, 252, 0.5);
+  color: white;
+}
+.before-after-label {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.before-after-label.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.before-label {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+  color: white;
+}
+.after-label {
+  background: linear-gradient(135deg, #1dd1a1 0%, #10ac84 100%);
+  color: white;
+}
+@media (max-width: 992px) {
+  .img-lg {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .img-sm,
+  .img-lg {
+    height: 300px;
+  }
+}
+.divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ddd, transparent);
+  margin: 40px 0;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: opacity 1s ease, transform 1.5s ease;
+}
+.divider.visible {
+  opacity: 1;
+  transform: scaleX(1);
+}
+.text-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.text-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* new */
+/* =========================
+   BEFORE-AFTER GALLERY — PRECISE 4PX GAP, NO RADIUS
+========================= */
+
+.before-after-gallery .custom-gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 !important; /* Force no radius */
+  transition: transform 0.3s ease;
+}
+
+.before-after-gallery .custom-gallery-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0 !important; /* Force no radius on container */
+  margin-bottom: 0;
+  box-shadow: none;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.before-after-gallery .custom-gallery-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.before-after-gallery .custom-gallery-container:hover .custom-gallery-img {
+  transform: scale(1.05);
+}
+
+.before-after-gallery .custom-img-label {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-weight: 600;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.before-after-gallery .custom-gallery-container:hover .custom-img-label {
+  opacity: 1;
+}
+
+/* === IMAGE SIZING WITH ASPECT RATIO (NO FIXED HEIGHTS) === */
+.before-after-gallery .custom-img-lg {
+  aspect-ratio: 4 / 3;
+  height: auto;
+}
+
+.before-after-gallery .custom-img-sm {
+  aspect-ratio: 3 / 2;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .before-after-gallery .custom-img-lg {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 768px) {
+  .before-after-gallery .custom-img-lg,
+  .before-after-gallery .custom-img-sm {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* === CRITICAL: 4PX GAP BETWEEN ALL IMAGES === */
+.before-after-gallery .row.custom-gap {
+  --bs-gutter-x: 4px !important;
+  --bs-gutter-y: 4px !important;
+}
+
+/* Ensure no padding/margin from Bootstrap overrides */
+.before-after-gallery .col-6,
+.before-after-gallery .col-md-6 {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+/* Optional: Make sure parent containers don't add spacing */
+.before-after-gallery .row {
+  margin-left: -2px !important;
+  margin-right: -2px !important;
+}
+
+/* Label styling remains unchanged */
+.before-after-gallery .before-after-label {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.before-after-gallery .before-after-label.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.before-after-gallery .before-label {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+  color: white;
+}
+
+.before-after-gallery .after-label {
+  background: linear-gradient(135deg, #1dd1a1 0%, #10ac84 100%);
+  color: white;
+}
